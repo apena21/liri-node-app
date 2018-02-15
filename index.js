@@ -100,21 +100,7 @@ function movieCheck () {
             console.log("Default movie details for 'Mr. Nobody'.")
 		};
 
-		// omdb.search({ title: '', year: '' }, true, function(err, movies) {
-        //     if(err) {
-        //         return console.error(err);
-        //     }
-        
-        //     if(movies.length < 1) {
-        //         return console.log('No movies were found!');
-        //     }
-        
-        //     movies.forEach(function(movie) {
-        //         console.log('%s (%d)', movie.title, movie.year);
-        //     });
-		// });
-        
-        //console.log(data.tracks.items[0]);
+        // search movie title
 
         var urlHit = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=full&tomatoes=true&apikey=" + keys.omdb.key;
 
@@ -158,7 +144,7 @@ function movieCheck () {
 
 //************************** Do What It Says **************************
 // reset the values of the command and if statements again, make if statements into a big function and call it again. 
-/*
+
 function randomFile () {
 
 // fs is a core Node package for reading and writing files
@@ -182,11 +168,10 @@ fs.readFile('random.txt','utf8',  function(error, data) {
     // We will then re-display the content as an array.
     console.log(dataArr);
     // OR
-    dataArr.forEach(v => console.log(v));
+   // dataArr.forEach(v => console.log(v));
   });
   
   //OR
-  dataArr.forEach(data => console.log(data));
+  //dataArr.forEach(data => console.log(data));
 
 }
-*/
